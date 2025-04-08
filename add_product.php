@@ -82,7 +82,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $check_result = $check_stmt->get_result();
 
                 if ($check_result->num_rows > 0) {
-                    // Display SweetAlert notification when product ID already exists
                     echo "<script>
                         document.addEventListener('DOMContentLoaded', function() {
                             Swal.fire({
